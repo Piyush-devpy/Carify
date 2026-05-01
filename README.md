@@ -1,16 +1,121 @@
-# React + Vite
+# Carify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Carify is a modern front-end e-commerce web application built using React. It provides a clean user interface for browsing cars, viewing details, and simulating order tracking. The project focuses on responsive design, smooth navigation, and optimized performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Responsive and modern user interface
+* Explore section with dynamic car cards
+* Hero image slider with smooth transitions
+* Track Your Order page with clean empty-state UI
+* Navigation using React Router
+* Optimized images for fast loading
+* Modular component-based architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Functional Components and Hooks)
+* React Router DOM (Client-side routing)
+* CSS (Custom styling, responsive design)
+* Vite (Build tool and development server)
+
+---
+
+## Project Structure
+
+```
+Carify/
+│
+├── public/
+│   └── logo.png
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── HeroSlider.jsx
+│   │   ├── Explore.jsx
+│   │   ├── TrackOrder.jsx
+│   │   └── About.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation and Setup
+
+1. Clone the repository
+
+```
+git clone https://github.com/Piyush-devpy/Carify.git
+```
+
+2. Navigate to the project directory
+
+```
+cd carify
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the development server
+
+```
+npm run dev
+```
+
+---
+
+## Build for Production
+
+```
+npm run build
+```
+
+The optimized files will be generated in the `dist` folder.
+
+---
+
+## Deployment
+
+This project can be deployed using platforms such as:
+
+* Vercel
+* Netlify
+* GitHub Pages
+
+---
+
+## Key Learnings
+
+* Building reusable React components
+* Managing UI state using hooks
+* Implementing client-side routing
+* Optimizing images for performance
+* Structuring a scalable frontend project
+
+---
+
+## Author
+
+Piyush Chauhan
+
+---
+
+## License
+
+This project is created for learning and demonstration purposes.
