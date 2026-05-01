@@ -1,0 +1,10 @@
+/* Smooth scrolling for entire website */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* removes horizontal scroll */
+}

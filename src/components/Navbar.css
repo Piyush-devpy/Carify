@@ -1,0 +1,261 @@
+/* ========== GLOBAL ========== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #ffffff;
+  color: #1e293b;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.logo img {
+  width: 40px;
+  border-radius: 6px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #3b82f6;
+}
+
+/* SEARCH BAR */
+.Searchbar {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.Searchbar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1e293b;
+  padding: 6px;
+}
+
+.srchbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.srchbtn img {
+  width: 18px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Login */
+.actions button:first-child {
+  background: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+/* Signup */
+.actions button:last-child {
+  background: #3b82f6;
+  color: white;
+}
+
+.actions button:hover {
+  opacity: 0.85;
+}
+
+/* ========== MODAL ========== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+.modal-box input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+}
+
+/* PASSWORD FIELD */
+.password-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+.password-field input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  background: transparent; /* fix: no grey background on input */
+}
+
+/* ========== EYE BUTTON FIX ========== */
+.eye-btn {
+  background: transparent;      /* fully transparent background */
+  border: none;                 /* no border */
+  outline: none;                /* no outline on focus */
+  box-shadow: none;             /* no shadow */
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;    /* removes browser default button styles */
+  appearance: none;
+}
+
+.eye-btn:hover,
+.eye-btn:focus,
+.eye-btn:active {
+  background: transparent;     /* stays transparent on all states */
+  outline: none;
+  box-shadow: none;
+}
+
+.eye-btn img {
+  width: 20px;
+  display: block;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.eye-btn:hover img {
+  opacity: 1;                  /* icon gets visible on hover */
+}
+/* ===================================== */
+
+/* MODAL BUTTONS */
+.modal-box button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Primary */
+.modal-box button:first-of-type {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Secondary */
+.modal-box button:last-of-type {
+  background: #e2e8f0;
+}
+
+/* PLACEHOLDER */
+input::placeholder {
+  color: #94a3b8;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .Searchbar {
+    width: 100%;
+  }
+
+  .Searchbar input {
+    width: 100%;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .Searchbar {
+    max-width: 200px;
+  }
+}

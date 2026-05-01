@@ -1,0 +1,132 @@
+/* ========== SECTION ========== */
+.Explore {
+  padding: 60px 80px;
+  background: #f8fafc;
+  scroll-margin-top: 80px; /* prevents navbar overlap */
+}
+
+/* TITLE */
+.explore-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+/* ========== GRID ========== */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* ========== CARD ========== */
+.car-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* IMAGE ZOOM */
+.car-card:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+.card-content {
+  padding: 16px;
+}
+
+/* TITLE */
+.card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+/* PRICE */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b82f6;
+  margin: 6px 0;
+}
+
+/* DESCRIPTION */
+.description {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* BUTTON */
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #2563eb;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .Explore {
+    padding: 40px;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .Explore {
+    padding: 30px 20px;
+  }
+
+  .explore-title {
+    font-size: 24px;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 180px;
+    object-fit: contain;
+  }
+}
