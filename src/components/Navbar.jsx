@@ -11,6 +11,7 @@ const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // ✅ NEW
 
   return (
     <>
@@ -21,48 +22,61 @@ const Navbar = () => {
           <span>Carify.com</span>
         </div>
 
-        {/* Navigation Links */}
-        <ul className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              onClick={() => {
-                setTimeout(() => {
-                  document
-                    .getElementById("Explore")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }, 100);
-              }}
-            >
-              Explore
-            </Link>
-          </li>
-          <li>
-            <Link to="/track">Track Your Order</Link>
-          </li>
-        </ul>
-
-        {/* Search Bar */}
-        <div className="Searchbar">
-          <input type="text" placeholder="Search" />
-          <button className="srchbtn">
-            <img src={search} alt="search" />
-          </button>
+        {/* Hamburger */}
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
         </div>
 
-        {/* Actions */}
-        <div className="actions">
-          {isLoggedIn ? (
-            <button onClick={() => setIsLoggedIn(false)}>Logout</button>
-          ) : (
-            <>
-              <button onClick={() => setShowLogin(true)}>Login</button>
-              <button onClick={() => setShowSignup(true)}>Signup</button>
-            </>
-          )}
+        {/* NAV CONTENT */}
+        <div className={`nav-content ${menuOpen ? "active" : ""}`}>
+          {/* Navigation Links */}
+          <ul className="nav-links">
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            </li>
+
+            <li>
+              <Link
+                to="/"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setTimeout(() => {
+                    document
+                      .getElementById("explore")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }, 100);
+                }}
+              >
+                Explore
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/track" onClick={() => setMenuOpen(false)}>
+                Track Your Order
+              </Link>
+            </li>
+          </ul>
+
+          {/* Search Bar */}
+          <div className="Searchbar">
+            <input type="text" placeholder="Search" />
+            <button className="srchbtn">
+              <img src={search} alt="search" />
+            </button>
+          </div>
+
+          {/* Actions */}
+          <div className="actions">
+            {isLoggedIn ? (
+              <button onClick={() => setIsLoggedIn(false)}>Logout</button>
+            ) : (
+              <>
+                <button onClick={() => setShowLogin(true)}>Login</button>
+                <button onClick={() => setShowSignup(true)}>Signup</button>
+              </>
+            )}
+          </div>
         </div>
       </nav>
 
