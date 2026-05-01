@@ -14,6 +14,7 @@ body {
   background: #ffffff;
   color: #1e293b;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: relative;
 }
 
 /* LOGO */
@@ -29,6 +30,20 @@ body {
 .logo img {
   width: 40px;
   border-radius: 6px;
+}
+
+/* HAMBURGER */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* NAV CONTENT WRAPPER */
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 /* NAV LINKS */
@@ -154,43 +169,40 @@ body {
   border: none;
   outline: none;
   padding: 8px;
-  background: transparent; /* fix: no grey background on input */
+  background: transparent;
 }
 
-/* ========== EYE BUTTON FIX ========== */
+/* EYE BUTTON */
 .eye-btn {
-  background: transparent;      /* fully transparent background */
-  border: none;                 /* no border */
-  outline: none;                /* no outline on focus */
-  box-shadow: none;             /* no shadow */
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
   cursor: pointer;
   padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-appearance: none;    /* removes browser default button styles */
   appearance: none;
 }
 
 .eye-btn:hover,
 .eye-btn:focus,
 .eye-btn:active {
-  background: transparent;     /* stays transparent on all states */
+  background: transparent;
   outline: none;
   box-shadow: none;
 }
 
 .eye-btn img {
   width: 20px;
-  display: block;
   opacity: 0.5;
   transition: opacity 0.2s;
 }
 
 .eye-btn:hover img {
-  opacity: 1;                  /* icon gets visible on hover */
+  opacity: 1;
 }
-/* ===================================== */
 
 /* MODAL BUTTONS */
 .modal-box button {
@@ -200,13 +212,11 @@ body {
   cursor: pointer;
 }
 
-/* Primary */
 .modal-box button:first-of-type {
   background: #3b82f6;
   color: white;
 }
 
-/* Secondary */
 .modal-box button:last-of-type {
   background: #e2e8f0;
 }
@@ -216,13 +226,28 @@ input::placeholder {
   color: #94a3b8;
 }
 
-/* ===== MOBILE ===== */
+/* ========== MOBILE NAV FIX ========== */
 @media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    flex-wrap: wrap;
     padding: 15px 20px;
+  }
+
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-content.active {
+    display: flex;
   }
 
   .nav-links {
@@ -245,7 +270,7 @@ input::placeholder {
   }
 }
 
-/* ===== TABLET ===== */
+/* ========== TABLET ========== */
 @media (max-width: 1024px) {
   .navbar {
     padding: 15px 20px;
