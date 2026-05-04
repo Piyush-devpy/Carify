@@ -66,13 +66,7 @@ git clone https://github.com/Piyush-devpy/Carify.git
 cd carify
 ```
 
-3. Install dependencies
-
-```
-npm install
-```
-
-4. Run the development server
+3. Run the development server
 
 ```
 npm run dev
