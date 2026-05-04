@@ -69,6 +69,12 @@ cd carify
 3. Run the development server
 
 ```
+npm install
+```
+
+4. Run the development server
+
+```
 npm run dev
 ```
 
