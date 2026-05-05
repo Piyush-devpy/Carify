@@ -22,7 +22,7 @@ const Explore = () => {
       id: 2,
       name: "Dodge Charger SRT Hellcat",
       price: "$60,000",
-      description: "Muscle car with 700+ horsepower.",
+      description: "Muscle car with 700+ horsepower.A brutally powerful American muscle",
       img: carimg2,
     },
     {
@@ -36,14 +36,14 @@ const Explore = () => {
       id: 4,
       name: "Audi R8 V10 Plus",
       price: "$170,000",
-      description: "Luxury supercar with V10 engine.",
+      description: "The Audi R8 V10  Plus is a luxury supercar with V10 engine.",
       img: carimg4,
     },
     {
       id: 5,
       name: "Mercedes AMG GT R",
       price: "$150,000",
-      description: "Aggressive performance coupe.",
+      description: "Aggressive performance coupe,",
       img: carimg5,
     },
     {
@@ -57,7 +57,7 @@ const Explore = () => {
       id: 7,
       name: "Ferrari 488 Pista",
       price: "$330,000",
-      description: "Track-focused Ferrari performance beast.",
+      description: "Track-focused  performance beast.",
       img: carimg7,
     },
     {
