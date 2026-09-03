@@ -1,6 +1,12 @@
+<div>
 <p align="center"> <img src="./public/image.png" alt="Carify Preview" width="900"/> </p>
+    <h1 align ="center">Carify</h1></p>
+</div>
 
-# Carify
+<p align="center"> <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/> <img src="https://img.shields.io/badge/Vite-7+-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/> <img src="https://img.shields.io/badge/React_Router-DOM-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/> </p>
+
+<p align="center"> <img src="https://img.shields.io/github/stars/Piyush-devpy/Carify?style=flat-square" alt="Stars"/> <img src="https://img.shields.io/github/forks/Piyush-devpy/Carify?style=flat-square" alt="Forks"/> <img src="https://img.shields.io/github/license/Piyush-devpy/Carify?style=flat-square" alt="License"/> </p>
+
 
 Carify is a modern front-end e-commerce web application built using React. It provides a clean user interface for browsing cars, viewing details, and simulating order tracking. The project focuses on responsive design, smooth navigation, and optimized performance.
 
@@ -54,67 +60,13 @@ Carify/
 
 ---
 
-## Installation and Setup
-
-1. Clone the repository
-
-```
-git clone https://github.com/Piyush-devpy/Carify.git
-```
-
-2. Navigate to the project directory
-
-```
-cd carify
-```
-
-3. Run the development server
-
-```
-npm install
-```
-
-4. Run the development server
-
-```
-npm run dev
-```
-
----
-
-## Build for Production
-
-```
-npm run build
-```
-
-The optimized files will be generated in the `dist` folder.
-
----
 
 ## Deployment
 
-This project can be deployed using platforms such as:
+This project is deployed using platform :
 
 * Vercel
-* Netlify
-* GitHub Pages
-
 ---
-
-## Key Learnings
-
-* Building reusable React components
-* Managing UI state using hooks
-* Implementing client-side routing
-* Optimizing images for performance
-* Structuring a scalable frontend project
-
----
-
-## Author
-
-Piyush Chauhan
 
 ---
 
