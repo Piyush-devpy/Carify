@@ -5,8 +5,6 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/> <img src="https://img.shields.io/badge/Vite-7+-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/> <img src="https://img.shields.io/badge/React_Router-DOM-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/> </p>
 
-<p align="center"> <img src="https://img.shields.io/github/stars/Piyush-devpy/Carify?style=flat-square" alt="Stars"/> <img src="https://img.shields.io/github/forks/Piyush-devpy/Carify?style=flat-square" alt="Forks"/> <img src="https://img.shields.io/github/license/Piyush-devpy/Carify?style=flat-square" alt="License"/> </p>
-
 
 Carify is a modern front-end e-commerce web application built using React. It provides a clean user interface for browsing cars, viewing details, and simulating order tracking. The project focuses on responsive design, smooth navigation, and optimized performance.
 
