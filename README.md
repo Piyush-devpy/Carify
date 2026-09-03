@@ -1,3 +1,5 @@
+<p align="center"> <img src="./public/image.png" alt="Carify Preview" width="900"/> </p>
+
 # Carify
 
 Carify is a modern front-end e-commerce web application built using React. It provides a clean user interface for browsing cars, viewing details, and simulating order tracking. The project focuses on responsive design, smooth navigation, and optimized performance.
